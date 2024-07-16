@@ -10,7 +10,7 @@
 }
 .section-back {
   background-color: #f6f6f6;
-  background-image: url("../../assets/img/skyline/banner-slider.png");
+  background-image: url("../../assets/img/capital/30.webp");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -217,7 +217,7 @@ h2,
     .elementor-section.elementor-section-height-full {
       height: 100vh;
       background-color: #f6f6f6;
-      background-image: url("../../assets/img/skyline/banner-slider.png");
+      background-image: url("../../assets/img/capital/30.webp");
       background-position: center center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -230,7 +230,7 @@ h2,
   @media (max-width: 768px) {
     .elementor-section.elementor-section-height-full {
       background-color: #f6f6f6;
-      background-image: url("../../assets/img/skyline/banner-slider.png");
+      background-image: url("../../assets/img/capital/30.webp");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: top center;
@@ -323,9 +323,12 @@ h2,
 /*! CSS Used from: https://skylinebycandeur.com/wp-content/uploads/elementor/css/global.css?ver=1687149242 ; media=all */
 @media all {
   .elementor-widget-heading .elementor-heading-title {
-    color: #fff;
+    color: #000;
     font-family: "Gilda Display", Sans-serif;
     font-weight: 400;
+    background: -webkit-linear-gradient(#F7DB91, #000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   }
 }
 /*! CSS Used from: https://skylinebycandeur.com/wp-content/uploads/elementor/css/post-6.css?ver=1689246157 ; media=all */

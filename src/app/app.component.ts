@@ -8,10 +8,10 @@ declare var gtag: Function;
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'skyline';
+  title = 'capital45';
   ipAddress: any;
   constructor(public router: Router, private http: HttpClient) {
-    this.router.events.subscribe((event) => {
+    this.router.events.subscribe((event:any) => {
       if (event instanceof NavigationEnd) {
         gtag('config', 'AW-401331995', {
           page_path: event.urlAfterRedirects,
@@ -23,17 +23,17 @@ export class AppComponent {
     if (performance.navigation.type == 2) {
       window.location.reload();
     }
-    // this.getIp();
+    this.getIp();
   }
-  // getIp(): void {
-  //   this.http
-  //     .post('https://www.keyonprop.com/api/postIp', 'prop_name=' + this.title, {
-  //       headers: new HttpHeaders({
-  //         'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8',
-  //       }),
-  //     })
-  //     .subscribe((res: any) => {
-  //       return (this.ipAddress = res.message);
-  //     });
-  // }
+  getIp(): void {
+    this.http
+      .post('https://www.app.keyonprop.com/api/postIp', 'prop_name=' + this.title, {
+        headers: new HttpHeaders({
+          'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8',
+        }),
+      })
+      .subscribe((res: any) => {
+        return (this.ipAddress = res.message);
+      });
+  }
 }

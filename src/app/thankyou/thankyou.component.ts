@@ -10,7 +10,7 @@ declare var gtag:Function;
 export class ThankyouComponent implements OnInit {
 
   constructor(public router:Router) { 
-    this.router.events.subscribe(event=>{
+    this.router.events.subscribe((event:any)=>{
       if(event instanceof NavigationEnd){
         gtag('config', 'AW-401331995',{
           'page_path':event.urlAfterRedirects

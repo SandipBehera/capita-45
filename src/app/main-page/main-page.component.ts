@@ -14,8 +14,8 @@ import { UserService } from '../user_service/UserService';
 export class MainPageComponent implements OnInit {
   public myForm: FormGroup | any;
   ipAddress: any;
-  // IpAddress: any = this.getIp();
-  @Input() user: User = { name: '', email: '', phone: '', url: 'skyline' };
+  IpAddress: any = this.getIp();
+  @Input() user: User = { name: '', email: '', phone: '', url: 'capital45' };
   constructor(
     private element: ElementRef,
     private formbuilder: FormBuilder,
@@ -44,13 +44,13 @@ export class MainPageComponent implements OnInit {
       ],
     });
   }
-  // getIp(): void {
-  //   this.http
-  //     .get('https://www.keyonprop.com/api/getIp')
-  //     .subscribe((res: any) => {
-  //       return (this.ipAddress = res.message);
-  //     });
-  // }
+  getIp(): void {
+    this.http
+      .get('https://www.app.keyonprop.com/api/getIp')
+      .subscribe((res: any) => {
+        return (this.ipAddress = res.message);
+      });
+  }
   OnSave(): void {
     this.userService.formSubmit(this.user).subscribe(() => this.goBack());
   }
