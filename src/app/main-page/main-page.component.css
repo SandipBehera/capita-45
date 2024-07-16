@@ -150,7 +150,7 @@ h2,
 @media (max-width: 544px) {
   h2,
   .entry-content h2 {
-    font-size: 25px;
+    font-size: 16px;
   }
 }
 h2,
@@ -243,7 +243,7 @@ h2,
     .elementor-element .elementor-widget-container {
       transition: background 0.3s, border 0.3s, border-radius 0.3s,
         box-shadow 0.3s, transform var(--e-transform-transition-duration, 0.4s);
-      margin-left: 45vw;
+      margin-left: 1vw;
     }
   }
   .elementor-widget-wrap {
