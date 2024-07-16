@@ -8,7 +8,7 @@ frontend:
       commands:
         - npm run build
   artifacts:
-    baseDirectory: dist/skyline
+    baseDirectory: dist/capital
     files:
       - "**/*"
   cache:
