@@ -9,7 +9,6 @@
   <meta name="description" content="Capital 45 is a premium residential project in Kokapet, Hyderabad. It offers 5 BHK Apartments with world-class amenities. Book your dream home now!">
   <meta name="keywords" content="Capital 45, Kokapet, Hyderabad, 5 BHK Apartments, Residential Project, Book Now">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="assets/img/capital/logo.png">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/img/capital/logo.png">
@@ -38,8 +37,18 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" rel="stylesheet">
 
   <!-- jQuery -->
+
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.getElementById("loader").remove();
+      document.querySelector('header').classList.remove('pload');
+      document.querySelector('main').classList.remove('pload');
+      document.querySelector('footer').classList.remove('pload');
+    });
+    var sitePrimaryColor = '#0a6b84';
+  </script>
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-GVDL8E6ZGG"></script>
   <script>
@@ -59,15 +68,7 @@
 <body style="background-color: black;">
   <app-root></app-root>
   
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      document.getElementById("loader").remove();
-      document.querySelector('header').classList.remove('pload');
-      document.querySelector('main').classList.remove('pload');
-      document.querySelector('footer').classList.remove('pload');
-    });
-    var sitePrimaryColor = '#0a6b84';
-  </script>
+  
 
   <!-- FancyBox Script -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
