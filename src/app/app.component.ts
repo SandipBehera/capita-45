@@ -20,9 +20,6 @@ export class AppComponent {
     });
   }
   ngOnInit(): void {
-    if (performance.navigation.type == 2) {
-      window.location.reload();
-    }
     this.getIp();
   }
   getIp(): void {
