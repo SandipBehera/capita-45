@@ -1,61 +1,82 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <title>Booking Open In Capital 45, Gachibowli, Hyderabad</title>
   <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description"
-    content="Capital 45 is a premium residential project in Kokapet, Hyderabad. It offers 5 BHK Apartments with world-class amenities. Book your dream home now!">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Capital 45 is a premium residential project in Kokapet, Hyderabad. It offers 5 BHK Apartments with world-class amenities. Book your dream home now!">
   <meta name="keywords" content="Capital 45, Kokapet, Hyderabad, 5 BHK Apartments, Residential Project, Book Now">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="assets/img/capital/logo.png">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/img/capital/logo.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/img/capital/logo.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/img/capital/logo.png">
+  
+  <!-- Preload Fonts -->
   <link rel="preload" href="assets/assets/fonts/roboto-bold-webfont.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/assets/fonts/roboto-regular-webfont.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/assets/fonts/muli-variablefont_wght-webfont.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/assets/fonts/micon.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="dns-prefetch" href="http://cdn.jsdelivr.net/" crossorigin>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
+
+  <!-- Prefetch and Preconnect -->
+  <link rel="dns-prefetch" href="//cdn.jsdelivr.net/">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Montserrat:wght@200&family=Raleway:wght@100&family=Ruthie&family=Spectral:ital,wght@1,200&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet">
+
+  <!-- FancyBox -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" rel="stylesheet">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Montserrat:wght@200&family=Raleway:wght@100&family=Ruthie&family=Spectral:ital,wght@1,200&display=swap"
-    rel="stylesheet">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GVDL8E6ZGG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-GVDL8E6ZGG');
+  </script>
+
   <style>
     .firstname {
       display: none;
     }
   </style>
-
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GVDL8E6ZGG">
-  </script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-GVDL8E6ZGG');
-  </script>
 </head>
 
-<body style="background-color:black ;">
+<body style="background-color: black;">
   <app-root></app-root>
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.getElementById("loader").remove();
+      document.querySelector('header').classList.remove('pload');
+      document.querySelector('main').classList.remove('pload');
+      document.querySelector('footer').classList.remove('pload');
+    });
+    var sitePrimaryColor = '#0a6b84';
+  </script>
 
-  <script>document.addEventListener("DOMContentLoaded", function (event) { document.getElementById("loader").remove(); document.querySelector('header').classList.remove('pload'); document.querySelector('main').classList.remove('pload'); document.querySelector('footer').classList.remove('pload') }); var sitePrimaryColor = '#0a6b84';</script>
+  <!-- FancyBox Script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
   <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TVZ5LG4" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TVZ5LG4" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
 </body>
 
 </html>
